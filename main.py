@@ -6,7 +6,7 @@ alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n'
             ]
 
 direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n")
-text = input("Type your message:\n").lower()
+text = input("Type your message:\n").lower().replace(" ", "")
 shift = int(input("Type the shift number:\n"))
 
 
@@ -15,6 +15,11 @@ def encript(original_text, shift_amount):
 
     for letter in original_text:
         shifted_position = alphabet.index(letter) + shift_amount
+
+        shifted_position %= len(alphabet)
         cipher_text += alphabet[shifted_position]
 
     print(f"Here is the encoded result: {cipher_text}")
+
+
+encript(text, shift)
