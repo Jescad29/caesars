@@ -17,8 +17,6 @@ El **Cifrado César** es un método de encriptación muy antiguo utilizado por J
 - 🔡 Encriptar cualquier texto con un desplazamiento personalizado.
 - 🔓 Desencriptar un mensaje cifrado conociendo el desplazamiento.
 - 📜 Soporte para letras mayúsculas y minúsculas.
-- 🧼 Limpieza automática del texto (remueve acentos y caracteres especiales).
-- 💬 Interfaz de consola amigable y fácil de usar.
 
 ---
 
